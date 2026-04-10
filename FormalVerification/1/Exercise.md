@@ -9,6 +9,6 @@ Session 1: Exercises
 
 4. Find out and interpret the type signatures of the terms `[]`, `Just`, `Right`. Which syntactic/semantic features in Lean make parametric polymorphism more clearer/rigorous compared to Haskell?
 
-5. Write a function which calculates the sum of a `List Nat`? Why are `length` and `sum` easy to define but not `factorial` which is more trivial?
+5. Write a function which filters a `List Nat` based on a given predicate? Why is `filter` easy to define but not `factorial` which seems more trivial?
 
 6. Complete the implementation of `creditAccount` and `transferFunds` in the Ledger model.
