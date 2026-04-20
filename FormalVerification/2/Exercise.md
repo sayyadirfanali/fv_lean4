@@ -12,4 +12,4 @@ Session 2: Exercises
 
 4. Try to prove the following propositions using the principle of induction: 
     - `forall n : Nat. n = n + 0`
-    - `forall x y : String. length (x ++ y) = length x + length y`
+    - `forall x y : List Nat. length (x ++ y) = length x + length y`
