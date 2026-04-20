@@ -7,7 +7,8 @@ Session 2: Exercises
     - `P /\ (Q \/ R)`
     - `(P -> Q) -> R`
     - `~ ~ ~ P`
-3. Is a function of type `False -> P` possible  for any `P`. Why? What does this fact correspond to in logic?
+
+3. Does there exist a function of type `False -> P` for any and every `P`. Why? What does this fact correspond to in logic?
 
 4. Try to prove the following propositions using principle induction: 
     - `forall n : Nat. n = n + 0`
