@@ -36,10 +36,14 @@ theorem addAccount_exists (l : Ledger) (a : Account) :
     contradiction
 
 theorem addAccount_not_exists (l : Ledger) (a : Account) :
-  ¬ (l.any (λ x => x.id == a.id) = true) -> (addAccount l a).length = l.length + 1 := by
-  intro any_false
-  unfold addAccount
-  split <;> simp ; contradiction 
+  ¬ (l.any (λ x => x.id == a.id) = true) -> (addAccount l a).length = l.length + 1 := by sorry
+
+theorem addAccount_idem (l : Ledger) (a : Account) :
+  addAccount (addAccount l a) a = addAccount l a := by sorry
+
+def getBalance (l : Ledger) (id : Ident) : Option Amount := sorry
+ 
+def getSupply (l : Ledger) : Amount := sorry
 
 def debitAccount (l : Ledger) (id : Ident) (amt : Amount) : Option Ledger :=
   match l with
@@ -53,4 +57,4 @@ def debitAccount (l : Ledger) (id : Ident) (amt : Amount) : Option Ledger :=
 
 def creditAccount (l : Ledger) (id : Ident) : (amt : Amount) : Option Ledger := sorry
 
-def transferFunds (l : Ledger) (fromId : Ident) (toId : Ident) (amt : Amount) : Option (List Account) := sorry
+def transferFunds (l : Ledger) (fromId : Ident) (toId : Ident) (amt : Amount) : Option Ledger := sorry
